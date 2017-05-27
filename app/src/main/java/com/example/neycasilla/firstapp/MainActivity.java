@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         Button frameLayoutButton = (Button)findViewById(R.id.Frame);
         Button listLayoutButton = (Button)findViewById(R.id.List);
         Button gridLayoutButton = (Button)findViewById(R.id.Greed);
+        Button scrollLayoutButton = (Button)findViewById(R.id.Scroll);
         linearLayoutVerticalButton.setOnClickListener(
                 new View.OnClickListener(){
                     @Override
@@ -50,6 +51,15 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view){
                         Intent touch = new Intent(MainActivity.this,Main7Activity.class);
+                        startActivity(touch);
+                    }
+                }
+        );
+        scrollLayoutButton.setOnClickListener(
+                new View.OnClickListener(){
+                    @Override
+                    public void onClick(View view){
+                        Intent touch = new Intent(MainActivity.this,Main8Activity.class);
                         startActivity(touch);
                     }
                 }
