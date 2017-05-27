@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.neycasilla.firstapp.Main3Activity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:id="@+id/TextView1"
+            android:layout_width="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content"
+            android:background="#ff0000"
+            android:gravity="center"
+            android:text="@string/one"/>
+        <TextView
+            android:id="@+id/TextView2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#00ff00"
+            android:gravity="center"
+            android:text="@string/two"/>
+        <TextView
+            android:id="@+id/TextView3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView1"
+            android:layout_centerInParent="true"
+            android:background="#0000ff"
+            android:gravity="center"
+            android:text="@string/three"/>
+        <Button
+            android:id="@+id/ToFour"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:text="ToFour"
+            />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
